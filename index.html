@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>CSS loaders</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- My CSS file -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- JS logic -->
+		<script src="script.js"></script> 
+	</head>
+	
+	<body>
+	
+		<div id="title">Just a few CSS3 loaders</div>
+	
+		<div id="mainBox">
+			
+			<!-- buttons -->
+			<div class="button buttonActive" id="loaderButton1">Loader 1</div>
+			<div class="button" id="loaderButton2">Loader 2</div>
+			<div class="button" id="loaderButton3">Loader 3</div>
+			<div class="button" id="loaderButton4">Loader 4</div>
+			<div class="button" id="loaderButton5">Loader 5</div>
+			<div class="button" id="loaderButton6">Loader 6</div>
+			<div class="button" id="loaderButton7">Loader 7</div>
+			<div class="button" id="loaderButton8">Loader 8</div>
+			<div class="button" id="loaderButton9">Loader 9</div>
+			<div class="button" id="loaderButton10">Loader 10</div>
+			<div class="button" id="showCodeButton">Show code</div>
+			
+			<div id="text">
+				<!-- sample blurred text -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a fermentum felis. Morbi efficitur est justo, vitae sollicitudin mauris tincidunt at. Proin id felis a erat feugiat ullamcorper. Maecenas mauris libero, rhoncus vitae metus non, mattis ultrices felis. Suspendisse potenti. Suspendisse ante sapien, gravida eu est ac, convallis egestas felis. Nunc euismod nisl odio, ut tristique ligula pharetra in. In sed semper lacus, congue congue nibh. Duis pretium, enim vitae ultrices pulvinar, nunc eros aliquam arcu, facilisis pellentesque justo velit at odio.</p>
+				<p>Nulla dictum tempus iaculis. Nullam laoreet urna quis tempor tempus. Nulla vulputate sagittis turpis, vel pulvinar odio feugiat eu. Praesent accumsan ultricies tempor. Integer porta eleifend nibh, ut dignissim leo dictum eu. Ut lacinia vehicula elit porttitor eleifend. Quisque a ipsum in diam ornare tempus ut eget sapien. Sed ac urna sem. Pellentesque finibus elementum enim, sed auctor dolor volutpat eu. Aenean vitae sem porttitor, cursus massa nec, ultricies metus. Morbi consectetur, neque lobortis lobortis finibus, lacus enim facilisis diam, quis ultricies leo sem vitae tortor. Integer interdum nisl magna, in consequat diam ultricies euismod. Nulla fringilla, dolor ut pellentesque semper, arcu purus sodales elit, ut pulvinar est erat at ipsum. Pellentesque convallis nisi vitae massa efficitur, nec sollicitudin dui sollicitudin. Curabitur id tellus eget velit feugiat egestas. Vestibulum auctor non lorem ut venenatis.</p>
+				<p>Proin vitae odio ipsum. Aliquam vel magna vel leo consectetur fermentum. Vestibulum fringilla vestibulum dapibus. Praesent quis lacus nulla. Vestibulum at lacinia enim, ut eleifend augue. Integer vel odio tortor. Nam cursus pellentesque feugiat. Donec at quam bibendum, rutrum ex quis, condimentum felis. Phasellus dapibus eget eros commodo lacinia. Nunc euismod felis vel porttitor condimentum. Integer semper consequat vehicula.</p>
+			
+				<!-- for showing code -->
+				<div id="showCodeDiv">
+					<div id="showCodeLeft">
+						<div class="codePanelTitle">HTML</div>
+						<textarea id="htmlTextarea"></textarea>
+					</div>
+					<div id="showCodeRight">
+						<div class="codePanelTitle">CSS</div>
+						<textarea id="cssTextarea"></textarea>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- different loaders (most of them hidden at the start) -->
+			<div id="loaderDiv">
+			
+				<div class="loader" id="loader1"></div>
+					
+				<div class="loader" id="loader2"></div>
+				
+				<div class="loader" id="loader3">
+					<div id="outer">
+						<div id="inner">
+							<div id="center"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="loader" id="loader4">
+					<div id="inner"></div>
+				</div>
+				
+				<div class="loader" id="loader5">
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>	
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+				</div>
+				
+				<div class="loader" id="loader6">
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>	
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+				</div>
+				
+				<div class="loader" id="loader7">
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+					<div class="circleBox"><div class="circle"></div></div>
+				</div>
+				
+				<div class="loader" id="loader8">
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+				</div>
+				
+				<div class="loader" id="loader9">
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+				</div>
+				
+				<div class="loader" id="loader10">
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+					<div class="rectangleBox"><div class="rectangle"></div></div>
+				</div>
+			
+			</div>		
+			
+		</div>
+		
+		<!-- author info -->
+		<div id="authorBox">
+			by Michał Wiśniewski (MW Projects)
+		</div>
+		
+	</body>
+<html>
